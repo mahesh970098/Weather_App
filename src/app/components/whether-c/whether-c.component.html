@@ -1,0 +1,84 @@
+<div class="body">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div>
+            <div class="container-fluid">
+                <div class="row row-row">
+                    <div class="col-md-6">
+
+                        <div class="whetherdata">
+                            <h3>The wheather App</h3>
+                            <h4>24<sup>0</sup> Celecius</h4>
+                            <h4>Visakhapatanam</h4>
+
+
+
+                        </div><br>
+                        <div class="inputfields">
+                            <!-- <form action="">
+                                <input type="search" placeholder="Entry City">
+                                <button type="submit">GET Wheather</button>
+                            </form> -->
+                            <form [formGroup]="locationGroup" novalidate>
+                                <input #location formControlName="location" placeholder="Type city name" type="text"
+                                    id="city" name="city" [required]="true" class="place-input" />
+                                <button class="add-city" type="submit"
+                                    (click)="onSubmit(locationGroup.controls['location'].value, true)">Add City</button>
+                                <button type="button" (click)="clearWeatherData()">Clear</button>
+                                <div *ngFor="let loc of locationsList">
+                                    <span class="location-link" (click)="selectedLocation(loc)">{{loc}}</span>
+                                    <span>{{loc}}</span>
+                                </div>
+                            </form>
+
+                        </div>
+                        <br>
+
+
+
+                    </div>
+                    <div class="col-md-6">
+                        <img class="image1" src="../../../assets/weather-illustration.png">
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div style="justify-content: center;">
+    <div class="body">
+       
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+        <!--        
+            <form [formGroup]="locationGroup" novalidate>
+                <input #location formControlName="location" placeholder="Type city name" type="text" id="city"
+                    name="city" [required]="true" class="place-input" />
+                <button class="add-city" type="submit"
+                    (click)="onSubmit(locationGroup.controls['location'].value, true)">Add City</button>
+                <button type="button" (click)="clearWeatherData()">Clear</button>
+                <div *ngFor="let loc of locationsList">
+                    <span class="location-link" (click)="selectedLocation(loc)">{{loc}}</span> <span>{{loc}}</span>
+                </div>
+            </form> -->
+        <!-- </div> -->
+        <div class="right-panel" *ngIf="showData">
+            <!-- <i class="fa fa-cloud"></i>
+    <i class='fas fa-arrow-alt-circle-left' style='font-size:48px;color:red'></i> -->
+            <div style="display:inline-block">
+                <div>{{temperature}}C</div>
+                <div>{{weatherDesc}}</div>
+                <div>Wind: {{wind}}</div>
+                <div>Pressure: {{pressure}}</div>
+            </div>
+            <b>Weekly Satus</b>
+            <div class="day" id='day0'></div>
+            <div class="day" id='day1'></div>
+            <div class="day" id='day2'></div>
+            <div class="day" id='day3'></div>
+            <div class="day" id='day4'></div>
+        </div>

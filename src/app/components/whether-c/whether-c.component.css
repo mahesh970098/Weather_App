@@ -46,11 +46,17 @@ body {
     height: 6vh;
 }
 
-button {
+.add-city {
     background-color: #4B77BE;
     color: white;
     border-radius: 5px;
     height: 6vh;
     text-decoration: none;
     margin-left: 5px;
+    text-decoration: none;
+    border: none;
+}
+
+h2 {
+    color: #4B77BE;
 }

@@ -1,10 +1,10 @@
-## Project's Title
+## Weather App 
 Weather App (Angular project)
 
-**## Project Description
+## Project Description
 We can find weather details  by giving the city name in text box 
 
-**## How to Install and Run the Project
+## How to Install and Run the Project
 
 Downoad the Repo.
 

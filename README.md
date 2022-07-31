@@ -1,27 +1,31 @@
-# Whether
+## Project's Title
+Weather App (Angular project)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.3.
+**## Project Description
+We can find weather details  by giving the city name in text box 
 
-## Development server
+**## How to Install and Run the Project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Downoad the Repo.
 
-## Code scaffolding
+npm install 
+--in your terminal
+serve/run
+ng serve -open
+(or)
+ng s -o
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## How to Use the Project
 
-## Build
+We can find weather details  by giving the city name in text box 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Project details
+bootsrstrap design implemented.
+Two-way binding, ngIf, httpClient & async with Observables
+Load state when waiting for the API response
+error handling implemented(Alert box)
+i fetched data 7 days weather .but api is not suppoting 
+remining working fine
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
